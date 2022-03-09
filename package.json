@@ -1,0 +1,23 @@
+{
+  "name": "json-to-multiple-files",
+  "version": "1.0.0",
+  "description": "Save big data as json (readable) in multiple files according to a Max size of file",
+  "main": "json-to-multiples-files.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexScigalszky/json-to-multiple-files.git"
+  },
+  "author": "Alex P. Scigalszky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexScigalszky/json-to-multiple-files/issues"
+  },
+  "homepage": "https://github.com/AlexScigalszky/json-to-multiple-files#readme",
+  "dependencies": {
+    "async": "^3.2.3",
+    "puppeteer": "^13.5.0"
+  }
+}
