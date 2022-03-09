@@ -1,6 +1,6 @@
 {
   "name": "json-to-multiple-files",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Save big data as json (readable) in multiple files according to a Max size of file",
   "main": "json-to-multiples-files.js",
   "scripts": {
@@ -19,5 +19,17 @@
   "dependencies": {
     "async": "^3.2.3",
     "puppeteer": "^13.5.0"
-  }
+  },
+  "keywords": [
+    "files",
+    "multiples",
+    "json",
+    "json2files",
+    "json-to-files",
+    "javascript",
+    "library",
+    "save",
+    "read",
+    "save multiple"
+  ]
 }
