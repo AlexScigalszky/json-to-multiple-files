@@ -5,7 +5,7 @@ var json2multipleFiles = require('./json-to-multiples-files');
 var testData = {
     fileName: 'test',
     data:
-        Array(200)
+        Array(10)
             .fill(0)
             .map((item, index) => ({
                 name: 'test' + index,
