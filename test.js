@@ -1,4 +1,4 @@
-var json2multipleFiles = require('./json-to-multiples-files');
+var json2multipleFiles = require('./index');
 /*
  * Test Section 
  */
@@ -14,11 +14,11 @@ var testData = {
 }
 
 // test save
-json2multipleFiles.save(testData, './data', 100, function (err, data) {
+json2multipleFiles.save(testData, './', 100, function (err, data) {
     console.log('save test', data);
 });
 
 // test read
-json2multipleFiles.read('./data', 'test', function (err, data) {
+json2multipleFiles.read('./', 'test', function (err, data) {
     console.log('read test', data.length);
 });

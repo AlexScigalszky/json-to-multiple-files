@@ -25,9 +25,9 @@ var save = function (data, folder, maxFileSize, callback) {
         fs.writeFile(partFile, partData, function (err) {
             console.log('saving partFile: ' + partFile);
             if (err) {
-                return callback(err);
+                return cb(err);
             }
-            callback(null, partFile);
+            cb(null, partFile);
         });
     }, function (err, results) {
         if (err) {
@@ -47,12 +47,12 @@ var read = function (folder, fileName, callback) {
     for (var i = 0; i <= countParts; i++) {
         parts.push(file + '.' + i);
     }
-    async.map(parts, function (part, callback) {
+    async.map(parts, function (part, cb) {
         fs.readFile(part, function (err, data) {
             if (err) {
-                return callback(null, '');
+                return cb(null, '');
             }
-            callback(null, data);
+            cb(null, data);
         });
     }, function (err, results) {
         if (err) {

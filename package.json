@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/AlexScigalszky/json-to-multiple-files#readme",
   "dependencies": {
-    "async": "^3.2.3",
-    "puppeteer": "^13.5.0"
+    "async": "^3.2.3"
   },
   "keywords": [
     "files",
