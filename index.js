@@ -23,9 +23,8 @@ var save = function (data, folder, maxFileSize, callback) {
         var end = part.end;
         var partData = data.substring(start, end);
         var partFile = file + '.' + parts.indexOf(part);
-        fs.writeFile(partFile, partData, function (err) {
-            console.log('saving partFile: ' + partFile);
-        });
+        fs.writeFileSync(partFile, partData);
+        console.log('saving partFile: ' + partFile);
     }
     callback();
 };
