@@ -1,6 +1,6 @@
 {
   "name": "json-to-multiple-files",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Save big data as json (readable) in multiple files according to a Max size of file",
   "main": "index.js",
   "scripts": {
