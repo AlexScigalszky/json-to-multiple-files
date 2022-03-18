@@ -17,24 +17,17 @@ var save = function (data, folder, maxFileSize, callback) {
             end: (i + 1) * partSize
         });
     }
-    async.map(parts, function (part, cb) {
+    for (var i = 0; i < parts.length; i++) {
+        var part = parts[i];
         var start = part.start;
         var end = part.end;
         var partData = data.substring(start, end);
         var partFile = file + '.' + parts.indexOf(part);
         fs.writeFile(partFile, partData, function (err) {
             console.log('saving partFile: ' + partFile);
-            if (err) {
-                return cb(err);
-            }
-            cb(null, partFile);
         });
-    }, function (err, results) {
-        if (err) {
-            return callback(err);
-        }
-        callback(null, results);
-    });
+    }
+    callback();
 };
 
 // funtion that return the array from multiple files that are starting with the same name
