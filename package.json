@@ -1,10 +1,11 @@
 {
   "name": "json-to-multiple-files",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Save big data as json (readable) in multiple files according to a Max size of file",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "publish:patch": "tsc && npm version patch && npm publish --access public"
   },
   "repository": {
     "type": "git",
